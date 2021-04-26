@@ -33,10 +33,8 @@ public class DataProviderWithExcel_001 {
 	@Test(dataProvider = "Authentication")
 	public void f(String sUserName, String sPassword) {
 		LoginPage login = new LoginPage(driver);
-		login.setUsername(sUserName);
-		login.setPassword(sPassword);
-		login.clickLogin();
-		login.clickLogout();
+		login.Login(sUserName,sPassword);
+		login.Logout();
 	}
 
 	@AfterMethod

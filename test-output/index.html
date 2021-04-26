@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite_Collection" class="navigator-link">
-              <span class="suite-name border-skipped">Suite-Collection</span>
+              <span class="suite-name border-failed">Suite-Collection</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite_Collection" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,26 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  2 skipped,  1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite_Collection" class="hide-methods skipped suite-Suite_Collection"> (hide)</a> <!-- hide-methods skipped suite-Suite_Collection -->
-                      <a href="#" panel-name="suite-Suite_Collection" class="show-methods skipped suite-Suite_Collection"> (show)</a> <!-- show-methods skipped suite-Suite_Collection -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite_Collection" class="hide-methods failed suite-Suite_Collection"> (hide)</a> <!-- hide-methods failed suite-Suite_Collection -->
+                      <a href="#" panel-name="suite-Suite_Collection" class="show-methods failed suite-Suite_Collection"> (show)</a> <!-- show-methods failed suite-Suite_Collection -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite_Collection">
+                    <div class="method-list-content failed suite-Suite_Collection">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Collection" title="test.DataProviderWithExcel_002" class="method navigator-link" hash-for-method="f(demo, abc123)">f(demo, abc123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite_Collection" title="test.DataProviderWithExcel_003" class="method navigator-link" hash-for-method="f(success, okfine)">f(success, okfine)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite_Collection -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_Collection" title="test.DataProviderWithExcel_002" class="method navigator-link" hash-for-method="f(demo, abc123)">f(demo, abc123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite_Collection -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -138,32 +138,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite_Collection" class="panel Suite_Collection">
-          <div class="suite-Suite_Collection-class-skipped">
+          <div class="suite-Suite_Collection-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">test.DataProviderWithExcel_003</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="f(success, okfine)">
-                  </a> <!-- f(success, okfine) -->
-                  <span class="method-name">f</span>
-                  <span class="parameters">(success, okfine)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at test.DataProviderWithExcel_003.beforeMethod(DataProviderWithExcel_003.java:27)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_Collection-class-skipped -->
-          <div class="suite-Suite_Collection-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">test.DataProviderWithExcel_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -173,17 +150,76 @@
                   </a> <!-- f(demo, abc123) -->
                   <span class="method-name">f</span>
                   <span class="parameters">(demo, abc123)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at test.DataProviderWithExcel_002.beforeMethod(DataProviderWithExcel_002.java:27)
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;PC19982&apos;, ip: &apos;192.168.223.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2160, moz:profile: C:\Users\TDK\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4f3aa4a1-90c4-41b9-b8f5-ba8ab52dc1bb
+*** Element info: {Using=xpath, value=//*[text()=&apos;Log out&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.LoginPage.clickLogout(LoginPage.java:32)
+	at test.DataProviderWithExcel_002.f(DataProviderWithExcel_002.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 16 stack frames
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_Collection-class-skipped -->
+          </div> <!-- suite-Suite_Collection-class-failed -->
+          <div class="suite-Suite_Collection-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.DataProviderWithExcel_003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f(success, okfine)">
+                  </a> <!-- f(success, okfine) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">(success, okfine)</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;PC19982&apos;, ip: &apos;192.168.223.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 15048, moz:profile: C:\Users\TDK\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 78182dfb-b051-4541-9262-0c34dc08b792
+*** Element info: {Using=xpath, value=//*[text()=&apos;Log out&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.LoginPage.clickLogout(LoginPage.java:32)
+	at test.DataProviderWithExcel_003.f(DataProviderWithExcel_003.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_Collection-class-failed -->
           <div class="suite-Suite_Collection-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -209,14 +245,22 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Suite-Collection&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Suite-1&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite-Collection&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;DataProviderWithExcel_001&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.DataProviderWithExcel_001&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DataProviderWithExcel_001 --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;DataProviderWithExcel_002&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;test.DataProviderWithExcel_002&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DataProviderWithExcel_002 --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;DataProviderWithExcel_003&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;test.DataProviderWithExcel_003&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Suite-1 --&gt;
+  &lt;/test&gt; &lt;!-- DataProviderWithExcel_003 --&gt;
 &lt;/suite&gt; &lt;!-- Suite-Collection --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,7 +272,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Suite-1 (3 classes)</span>
+                <span class="test-name">DataProviderWithExcel_001 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DataProviderWithExcel_002 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DataProviderWithExcel_003 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -258,20 +308,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f')
 data.setCell(0, 2, 'test.DataProviderWithExcel_001')
-data.setCell(0, 3, 2338);
+data.setCell(0, 3, 2787);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'f')
-data.setCell(1, 2, 'test.DataProviderWithExcel_002')
-data.setCell(1, 3, 0);
+data.setCell(1, 2, 'test.DataProviderWithExcel_003')
+data.setCell(1, 3, 711);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'f')
-data.setCell(2, 2, 'test.DataProviderWithExcel_003')
-data.setCell(2, 3, 0);
+data.setCell(2, 2, 'test.DataProviderWithExcel_002')
+data.setCell(2, 3, 704);
 window.suiteTableData['Suite_Collection']= { tableData: data, tableDiv: 'times-div-Suite_Collection'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite_Collection">
               </div> <!-- times-div-Suite_Collection -->
             </div> <!-- times-div -->
@@ -297,59 +347,70 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.DataProviderWithExcel_001</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">beforeSuite</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
+              <div class="chronological-class-name">test.DataProviderWithExcel_002</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">4092 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.DataProviderWithExcel_002</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.DataProviderWithExcel_001</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">4092 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">f(demo, abc123)</span>
-                <span class="method-start">4100 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">4104 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.DataProviderWithExcel_003</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">4161 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">f(success, okfine)</span>
-                <span class="method-start">4162 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">4165 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.DataProviderWithExcel_001</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">f(mngr321472, taqyzEg)</span>
-                <span class="method-start">10284 ms</span>
+                <span class="method-start">6525 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DataProviderWithExcel_002</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">f(demo, abc123)</span>
+                <span class="method-start">6998 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DataProviderWithExcel_003</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">f(success, okfine)</span>
+                <span class="method-start">7010 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DataProviderWithExcel_002</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">12624 ms</span>
+                <span class="method-start">7712 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DataProviderWithExcel_003</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">7723 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DataProviderWithExcel_001</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">9313 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

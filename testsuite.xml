@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Suite-Collection" parallel="classes" thread-count="2">
+<suite name="Suite-Collection" parallel="classes" thread-count="3">
 	<test name="Suite-1">
 		<classes>
 			<class name="test.DataProviderWithExcel_001" />

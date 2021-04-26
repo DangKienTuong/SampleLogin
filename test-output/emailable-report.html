@@ -9,36 +9,63 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite-Collection</th></tr>
-<tr><td><a href="#t0">Suite-1</a></td><td class="num">1</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">9,723</td><td></td><td></td></tr>
+<tr><td><a href="#t0">DataProviderWithExcel_003</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,845</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">DataProviderWithExcel_002</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,872</td><td></td><td></td></tr>
+<tr><td><a href="#t2">DataProviderWithExcel_001</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,447</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">28,164</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite-Collection</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Suite-1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">test.DataProviderWithExcel_002</td><td><a href="#m0">beforeMethod</a></td><td rowspan="1">1619409093660</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">test.DataProviderWithExcel_003</td><td><a href="#m1">beforeMethod</a></td><td rowspan="1">1619409093729</td><td rowspan="1">0</td></tr><tr><th colspan="4">Suite-1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">test.DataProviderWithExcel_002</td><td><a href="#m2">afterMethod</a></td><td rowspan="1">1619409093672</td><td rowspan="1">-1619409093672</td></tr><tr class="skippedodd"><td rowspan="1">test.DataProviderWithExcel_003</td><td><a href="#m3">afterMethod</a></td><td rowspan="1">1619409093733</td><td rowspan="1">-1619409093733</td></tr><tr><th colspan="4">Suite-1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">test.DataProviderWithExcel_002</td><td><a href="#m4">f</a></td><td rowspan="1">1619409093668</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">test.DataProviderWithExcel_003</td><td><a href="#m5">f</a></td><td rowspan="1">1619409093730</td><td rowspan="1">0</td></tr><tr><th colspan="4">Suite-1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.DataProviderWithExcel_001</td><td><a href="#m6">f</a></td><td rowspan="1">1619409099852</td><td rowspan="1">2338</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite-Collection</th></tr></tbody><tbody id="t0"><tr><th colspan="4">DataProviderWithExcel_003 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.DataProviderWithExcel_003</td><td><a href="#m0">f</a></td><td rowspan="1">1619419502111</td><td rowspan="1">711</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">DataProviderWithExcel_002 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.DataProviderWithExcel_002</td><td><a href="#m1">f</a></td><td rowspan="1">1619419502099</td><td rowspan="1">704</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">DataProviderWithExcel_001 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.DataProviderWithExcel_001</td><td><a href="#m2">f</a></td><td rowspan="1">1619419501626</td><td rowspan="1">2787</td></tr></tbody>
 </table>
-<h2>Suite-1</h2><h3 id="m0">test.DataProviderWithExcel_002#beforeMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at test.DataProviderWithExcel_002.beforeMethod(DataProviderWithExcel_002.java:27)
+<h2>DataProviderWithExcel_003</h2><h3 id="m0">test.DataProviderWithExcel_003#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>success</td><td>okfine</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;PC19982&apos;, ip: &apos;192.168.223.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 15048, moz:profile: C:\Users\TDK\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 78182dfb-b051-4541-9262-0c34dc08b792
+*** Element info: {Using=xpath, value=//*[text()=&apos;Log out&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.LoginPage.clickLogout(LoginPage.java:32)
+	at test.DataProviderWithExcel_003.f(DataProviderWithExcel_003.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.DataProviderWithExcel_003#beforeMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at test.DataProviderWithExcel_003.beforeMethod(DataProviderWithExcel_003.java:27)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>DataProviderWithExcel_002</h2><h3 id="m1">test.DataProviderWithExcel_002#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demo</td><td>abc123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;PC19982&apos;, ip: &apos;192.168.223.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2160, moz:profile: C:\Users\TDK\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4f3aa4a1-90c4-41b9-b8f5-ba8ab52dc1bb
+*** Element info: {Using=xpath, value=//*[text()=&apos;Log out&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.LoginPage.clickLogout(LoginPage.java:32)
+	at test.DataProviderWithExcel_002.f(DataProviderWithExcel_002.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.DataProviderWithExcel_002#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test.DataProviderWithExcel_003#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">test.DataProviderWithExcel_002#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demo</td><td>abc123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at test.DataProviderWithExcel_002.beforeMethod(DataProviderWithExcel_002.java:27)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">test.DataProviderWithExcel_003#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>success</td><td>okfine</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at test.DataProviderWithExcel_003.beforeMethod(DataProviderWithExcel_003.java:27)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">test.DataProviderWithExcel_001#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr321472</td><td>taqyzEg</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>DataProviderWithExcel_001</h2><h3 id="m2">test.DataProviderWithExcel_001#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr321472</td><td>taqyzEg</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

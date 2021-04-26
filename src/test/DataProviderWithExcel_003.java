@@ -21,7 +21,7 @@ public class DataProviderWithExcel_003 {
 	WebDriver driver;
 	private String sTestCaseName;
 	private int iTestCaseRow;
-
+	
 	@BeforeMethod
 	public void beforeMethod() throws Exception {
         System.setProperty("webdriver.gecko.driver", globalVar.getDriverPath());
@@ -33,10 +33,8 @@ public class DataProviderWithExcel_003 {
 	@Test(dataProvider = "Authentication")
 	public void f(String sUserName, String sPassword) {
 		LoginPage login = new LoginPage(driver);
-		login.setUsername(sUserName);
-		login.setPassword(sPassword);
-		login.clickLogin();
-		login.clickLogout();
+		login.Login(sUserName,sPassword);
+		login.Logout();
 	}
 
 	@AfterMethod

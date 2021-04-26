@@ -7,7 +7,6 @@ public class LoginPage {
 	WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
-		super();
 		this.driver = driver;
 	}
 	
@@ -16,19 +15,13 @@ public class LoginPage {
 	By loginBtn = By.name("btnLogin");
 	By logOutBtn = By.xpath("//*[text()='Log out']");
 
-	public void setUsername(String userID) {
+	public void Login(String userID, String passWord) {
 		driver.findElement(username).sendKeys(userID);
-	}
-
-	public void setPassword(String passWord) {
 		driver.findElement(pass).sendKeys(passWord);
-	}
-
-	public void clickLogin() {
 		driver.findElement(loginBtn).click();
 	}
 	
-	public void clickLogout() {
+	public void Logout() {
 		driver.findElement(logOutBtn).click();
 	}
 	
