@@ -9,16 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite-Collection</th></tr>
-<tr><td><a href="#t0">Suite-1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">13,921</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Suite-1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">10,685</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite-Collection</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Suite-1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.DataProviderWithExcel_002</td><td><a href="#m0">f</a></td><td rowspan="1">1619422482112</td><td rowspan="1">711</td></tr><tr class="failedodd"><td rowspan="1">test.DataProviderWithExcel_003</td><td><a href="#m1">f</a></td><td rowspan="1">1619422483768</td><td rowspan="1">666</td></tr><tr><th colspan="4">Suite-1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.DataProviderWithExcel_001</td><td><a href="#m2">f</a></td><td rowspan="1">1619422482102</td><td rowspan="1">2320</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite-Collection</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Suite-1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.DataProviderWithExcel_002</td><td><a href="#m0">f</a></td><td rowspan="1">1619423839375</td><td rowspan="1">778</td></tr><tr class="failedodd"><td rowspan="1">test.DataProviderWithExcel_003</td><td><a href="#m1">f</a></td><td rowspan="1">1619423839764</td><td rowspan="1">721</td></tr><tr><th colspan="4">Suite-1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.DataProviderWithExcel_001</td><td><a href="#m2">f</a></td><td rowspan="1">1619423839836</td><td rowspan="1">2684</td></tr></tbody>
 </table>
 <h2>Suite-1</h2><h3 id="m0">test.DataProviderWithExcel_002#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demo</td><td>abc123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User or Password is not valid: 
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;PC19982&apos;, ip: &apos;192.168.223.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 15504, moz:profile: C:\Users\TDK\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d964c4dd-60ef-486b-a496-42c269064a9b
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 13548, moz:profile: C:\Users\TDK\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b1c6b66a-4708-4e4a-8bf8-eac9eb3b0c32
 *** Element info: {Using=xpath, value=//*[text()=&apos;Log out&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -29,7 +29,10 @@ Session ID: d964c4dd-60ef-486b-a496-42c269064a9b
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pages.LoginPage.Logout(LoginPage.java:25)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at pages.LoginPage.Logout(LoginPage.java:33)
 	at test.DataProviderWithExcel_002.f(DataProviderWithExcel_002.java:37)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
@@ -39,8 +42,8 @@ Session ID: d964c4dd-60ef-486b-a496-42c269064a9b
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;PC19982&apos;, ip: &apos;192.168.223.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 15912, moz:profile: C:\Users\TDK\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d6562616-d6ae-433c-bfa4-51993fcad154
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 15260, moz:profile: C:\Users\TDK\AppData\Local\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 893930bb-ad47-4ed4-8ec5-3362c613ddc5
 *** Element info: {Using=xpath, value=//*[text()=&apos;Log out&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -51,7 +54,10 @@ Session ID: d6562616-d6ae-433c-bfa4-51993fcad154
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pages.LoginPage.Logout(LoginPage.java:25)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at pages.LoginPage.Logout(LoginPage.java:33)
 	at test.DataProviderWithExcel_003.f(DataProviderWithExcel_003.java:37)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
