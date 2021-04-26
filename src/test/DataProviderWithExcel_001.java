@@ -45,7 +45,6 @@ public class DataProviderWithExcel_001 {
 	@DataProvider
 	public Object[][] Authentication() throws Exception {
 		ExcelUtils.setExcelFile(globalVar.getDataPath(), "Sheet1");
-		sTestCaseName = this.toString();
 		sTestCaseName = ExcelUtils.getTestCaseName(this.toString());
 		iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName, 0);
 		Object[][] testObjArray = ExcelUtils.getTableArray(globalVar.getDataPath(),
